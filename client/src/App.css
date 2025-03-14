@@ -2,8 +2,43 @@
   text-align: center;
 }
 
+.App-header {
+  display: flex;
+  background-color: #ffffff;
+  min-height: 10vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  width: 8%; /* Set the width as desired */
+  background-color: white;
+  justify-content: flex-start;
+  margin-left: 5%;
+
+}
+
+.mainLogo {
+  justify-content: center;
+  align-items: center;
+  margin-right: 35%;
+  width: 20%;
+}
+
+
 .App-logo {
   width: 100%;
+}
+
+
+
+
+.about {
+
+  color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -11,19 +46,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-
 
 
 .App-link {
