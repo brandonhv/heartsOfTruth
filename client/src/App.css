@@ -14,7 +14,7 @@
 
 .menu {
   display: flex;
-  width: 8%; /* Set the width as desired */
+  width: 6%;
   background-color: white;
   justify-content: flex-start;
   margin-left: 5%;
@@ -33,6 +33,18 @@
   width: 100%;
 }
 
+.community {
+
+  width: 100%;
+}
+
+.construction {
+  width: 100%;
+}
+
+.mission {
+  width: 100%;
+}
 
 
 

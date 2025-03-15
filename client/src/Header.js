@@ -13,7 +13,7 @@ const Header = () => {
                 <img src={menu} className="menu" alt=""/>
                 <img src={logo} className="mainLogo" id="logo_og"alt=""/>                
                 
-                </div>
+            </div>
                 
         </Headroom>
     );
