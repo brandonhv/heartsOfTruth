@@ -1,4 +1,3 @@
-import React from "react";
 import mainImage from "./photos/IMG_8763.JPG";
 import community from "./photos/community.png";
 import construction from "./photos/construction.png"

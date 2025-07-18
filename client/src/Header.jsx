@@ -1,20 +1,14 @@
-import React from "react";
 import Headroom from 'react-headroom';
 import logo from './hearts_of_truth.png';
-import menu from './menu-burger.jpg'
+import './App.css';
 
-
-const Header = () => {
-
+const Header = ({ onBurgerClick }) => {
     return (
-        <Headroom >
-            
+        <Headroom>
             <div className="App-header">
-                <img src={menu} className="menu" alt=""/>
-                <img src={logo} className="mainLogo" id="logo_og"alt=""/>                
-                
+                <img src={logo} className="mainLogo" id="logo_og" alt="logo" />
+                <button className="custom-burger-button" onClick={onBurgerClick}>☰</button>
             </div>
-                
         </Headroom>
     );
 };
