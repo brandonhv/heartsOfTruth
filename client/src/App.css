@@ -12,6 +12,9 @@
 }
 
 
+
+
+
 .menu {
   display: flex;
   width: 6%;
@@ -28,10 +31,43 @@
   width: 95px; /* adjust as needed */
 }
 
+ /* Adding button */
 
-.App-logo {
-  width: 100%;
+.image-section {
+  position: relative;
+  margin-bottom: 2rem;
 }
+
+.content-image {
+  display: block;
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  height: auto;
+}
+
+.learn-more-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #000;
+}
+ /* Adding button */
+
+
 
 .community {
 
@@ -53,13 +89,6 @@
   text-align: center;
 }
 
-.content-image {
-  display: block;
-  width: 100vw;       /* Full viewport width */
-  max-width: none;    /* Remove max constraint */
-  margin: 0;          /* Remove margin */
-  height: auto; 
-}
 
 .about {
   color: black;
