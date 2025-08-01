@@ -1,5 +1,8 @@
 import { slide as Menu } from 'react-burger-menu';
+import logo from './hearts_of_truth.png';
 import './App.css';
+
+
 
 const BurgerSlideMenu = ({ isOpen, setIsOpen }) => {
   const handleStateChange = ({ isOpen }) => {
@@ -15,9 +18,16 @@ const BurgerSlideMenu = ({ isOpen, setIsOpen }) => {
       customBurgerIcon={false}
       right
     >
-      <a className="bm-item" href="/">Home</a>
-      <a className="bm-item" href="/about">About</a>
-      <a className="bm-item" href="/contact">Contact</a>
+      <div className="bm-header">
+          <img src={logo} className="bm-mainLogo" id="logo_og" alt="logo" />
+      </div>
+
+      <div className="bm-items">
+        <a className="bm-item" href="/collaborate">How to Collaborate?</a>
+        <a className="bm-item" href="/about">About</a>
+        <a className="bm-item" href="/contact">Contact</a>
+      </div>
+
     </Menu>
   );
 };
