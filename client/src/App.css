@@ -8,10 +8,38 @@
   align-items: center;
   justify-content: flex-end; /* aligns burger right */
   background-color: #ffffff;
-  min-height: 10vh;
+  min-height: 10vh; /* Ensures header is above other content */
+  
 }
 
+.mainLogo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95px; /* adjust as needed */
+  
+}
 
+.bm-header {
+  position: absolute;
+  top: -2%;
+  left: 0;
+  right: -50;
+  display: flex;
+  justify-content: center;
+  pointer-events: none; /* makes sure X stays clickable */
+  z-index: 1;
+  border: none;
+}
+
+.bm-mainLogo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95px; /* adjust as needed */
+  border: none;
+
+}
 
 
 
@@ -21,15 +49,11 @@
   background-color: white;
   justify-content: flex-start;
   margin-left: 5%;
+  
 
 }
 
-.mainLogo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 95px; /* adjust as needed */
-}
+
 
  /* Adding button */
 
@@ -89,6 +113,85 @@
   text-align: center;
 }
 
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  margin-bottom: 1.5rem; /* adds vertical spacing */
+  line-height: 1.6; 
+}
+
+
+/* Style for PHONES */
+
+@media (max-width: 480px) {
+  .section-content-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Add horizontal padding */
+    text-align: left; /* Align text to the left */
+  }
+  .titles {
+    text-align: left;
+    font-size: 2.75rem;
+  }
+  .subtitle {
+    text-align: left;
+    font-size: 1.75rem;
+    color: #5f6368;
+  }
+
+  .section-image {
+    display: block;
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;     /* adds the rounded corners */
+    object-fit: cover;
+    margin : 0 auto; /* centers the image */
+}
+  .colaborate-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto; /* centers the button */
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .text-content {
+    font-size: 1.50rem;
+    line-height: 1.5;
+    color: #333;
+    margin-top: 1rem;
+  }
+
+  .sub-question {
+    font-size: 1.50rem;
+    line-height: 1.5;
+    color: #333;
+    margin-top: 1rem;
+    font-weight: bold;
+
+  }
+
+  .section-divider {
+  border: none;
+  border-top: 1.75px solid #e0e0e0; /* light gray */
+  margin: 2rem 0;                /* vertical spacing */
+}
+
+
+}
+
+
 
 .about {
   color: black;
@@ -134,31 +237,58 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 500;
 }
 
 /* Menu content */
+
 .bm-menu {
-  background: #373a47;
+  background: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* changed from center to top */
+  align-items: flex-end;
+  padding-top: 80px; /* space under the X button */
+  padding-right: 40px;
+}
+
+.bm-items {
+  display: flex;
+  flex-direction: column;        /* stack vertically */
+  align-items: flex-end;         /* align to the right */
+  padding: 2rem;
+  
 }
 
 .bm-item {
-  color: white;
-  font-size: 1.5rem;
-  padding: 1rem;
+  display: block;                /* this is what you're missing */
+  color: black;
+  font-size: 1.2rem;
   text-decoration: none;
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  
+  
 }
+
+.bm-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none; /* remove border from last item */
+}
+
+.bm-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
 
 .bm-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
 
 .bm-cross {
-  background-color: white;  /* The lines of the X */
+  background-color: black;  /* The lines of the X */
 }
 
 .bm-cross-button {
