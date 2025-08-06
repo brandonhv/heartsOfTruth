@@ -125,7 +125,7 @@
 
 /* Style for PHONES */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .section-content-container {
     width: 100%;
     max-width: 800px;
@@ -195,6 +195,7 @@
 }
 
 
+
 }
 
 
@@ -203,11 +204,6 @@
   color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 
 .App-link {

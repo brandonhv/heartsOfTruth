@@ -10,7 +10,7 @@ import NewHouse from './NewHouse';
 import Community from './Community';
 import Construction from './Construction';
 import Mission from './Mission';  
-import ScrollToTop from './ScrollToTop'; // Import ScrollToTop component
+import ScrollToTop from './ScrollToTop';
 
 
 
@@ -22,10 +22,12 @@ function App() {
     <Router>
       <ScrollToTop />
       <div id="App">
+
         <BurgerSlideMenu isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
         <Header onBurgerClick={() => setIsMenuOpen(true)} />
+
         <Routes>
-      {/* <ScrollRestoration /> */}
+
           <Route path="/" element={<Content />} />
           <Route path="/newhouse" element={<NewHouse />} />
           <Route path="/community" element={<Community />} />
@@ -33,7 +35,9 @@ function App() {
           <Route path="/mission" element={<Mission />} />
       
         </Routes>
+
         <Footer />
+        
       </div>
     </Router>
   );
