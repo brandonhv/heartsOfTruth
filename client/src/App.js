@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import Header from './Header';
 import BurgerSlideMenu from './BurgerSlideMenu';
 import Content from './Content';
@@ -10,18 +10,22 @@ import NewHouse from './NewHouse';
 import Community from './Community';
 import Construction from './Construction';
 import Mission from './Mission';  
+import ScrollToTop from './ScrollToTop'; // Import ScrollToTop component
 
 
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
   return (
     <Router>
+      <ScrollToTop />
       <div id="App">
         <BurgerSlideMenu isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
         <Header onBurgerClick={() => setIsMenuOpen(true)} />
         <Routes>
+      {/* <ScrollRestoration /> */}
           <Route path="/" element={<Content />} />
           <Route path="/newhouse" element={<NewHouse />} />
           <Route path="/community" element={<Community />} />

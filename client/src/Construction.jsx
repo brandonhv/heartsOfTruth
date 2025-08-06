@@ -5,7 +5,7 @@ const Construction = () => {
     return (
         <div className="section-content-container">
             <h1 className="titles">Construction</h1>
-            <p className="subtitle"> Building from the ground up, making a new construction be a new home for a family. </p>
+            <p className="subtitle"> Creating homes from the ground up and wanting to ensure that families enjoy their new place, families are able to share their ideas of what home is for them. </p>
             <button 
                 className="colaborate-button" onClick={() =>window.open('https://www.gofundme.com/f/hearts-of-truth-changing-communities-one-home-at-a-time',
                 '_blank')}

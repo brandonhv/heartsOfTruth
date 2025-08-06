@@ -188,6 +188,12 @@
   margin: 2rem 0;                /* vertical spacing */
 }
 
+.first-title {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center; 
+}
+
 
 }
 

@@ -14,8 +14,8 @@ const Content = () => {
         return (
             <div className="content-container">
 
-                <h2>What we are working on right now?</h2>
-                <blockquote> Our first house will be built in Cagayan de Oro City, Philippines. </blockquote>
+                <h2 className="first-title">What are we currently working on?</h2>
+                <blockquote> " Launching our first home in Cagayan de Oro City, Philippines... "</blockquote>
                 <div className="image-section">
                 <img src={mainImage} className="content-image" alt="Main House" />
                     <button className="learn-more-btn" onClick={() => navigate('/newhouse')}>
@@ -27,7 +27,7 @@ const Content = () => {
                 
 
                 <h2>Community</h2>
-                <blockquote>The Community that we are focusing on helping is in Philipins for our first houses.</blockquote>
+                <blockquote>" Building homes for the people in the Philippines... "</blockquote>
                 <div className="image-section">
                 <img src={community} className="content-image" alt="Main House" />
                     <button className="learn-more-btn" onClick={() => navigate('/community')}>
@@ -38,7 +38,7 @@ const Content = () => {
 
 
                 <h2>Construction</h2>
-                <blockquote> Building from the ground up, making a new construction be a new home for a family.</blockquote>
+                <blockquote> " Creating homes from the ground up... " </blockquote>
                 <div className="image-section">
                 <img src={construction} className="content-image" alt="Main House" />
                     <button className="learn-more-btn" onClick={() => navigate('/construction')}>
@@ -48,7 +48,7 @@ const Content = () => {
                 <hr className="section-divider" />
 
                 <h2>Mission</h2>
-                <blockquote>Making the world a better place by helping families build an awesome team.</blockquote>
+                <blockquote>" Making an impact by changing people's trajectory of life, one home at a time... "</blockquote>
                 <div className="image-section">
                 <img src={mission} className="content-image" alt="Main House" />
                     <button className="learn-more-btn" onClick={() => navigate('/mission')}>
