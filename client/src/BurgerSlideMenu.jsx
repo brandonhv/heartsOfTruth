@@ -1,6 +1,6 @@
 import { slide as Menu } from 'react-burger-menu';
 import logo from './hearts_of_truth.png';
-import './App.css';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -9,6 +9,9 @@ const BurgerSlideMenu = ({ isOpen, setIsOpen }) => {
     setIsOpen(isOpen);
     document.body.classList.toggle('menu-open', isOpen);
   };
+
+
+  const navigate = useNavigate()
 
   return (
     <Menu
@@ -19,7 +22,7 @@ const BurgerSlideMenu = ({ isOpen, setIsOpen }) => {
       right
     >
       <div className="bm-header">
-          <img src={logo} className="bm-mainLogo" id="logo_og" alt="logo" />
+          <img src={logo} className="bm-mainLogo" id="logo_og" onClick={() => {navigate('/'); setIsOpen(false);}} alt="logo" />
       </div>
 
       <div className="bm-items">
