@@ -47,7 +47,7 @@ const Content = () => {
                 </div>
                 <hr className="section-divider" />
 
-                <h2 className="content-title">Mission</h2>
+                <h2>Mission</h2>
                 <blockquote>" Making an impact by changing people's trajectory of life, one home at a time... "</blockquote>
                 <div className="image-section">
                 <img src={mission} className="content-image" alt="Main House" />

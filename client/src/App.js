@@ -9,7 +9,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NewHouse from './NewHouse';
 import Community from './Community';
 import Construction from './Construction';
-import Mission from './Mission';  
+import Mission from './Mission';
+import Collaborate from './HowToCollab';
+import About from './About';
+import Contact from './Contact';
+
+
 import ScrollToTop from './ScrollToTop';
 
 
@@ -33,11 +38,14 @@ function App() {
           <Route path="/community" element={<Community />} />
           <Route path="/construction" element={<Construction />} />
           <Route path="/mission" element={<Mission />} />
+          <Route path="/collaborate" element={<Collaborate />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
       
         </Routes>
 
         <Footer />
-        
+
       </div>
     </Router>
   );
