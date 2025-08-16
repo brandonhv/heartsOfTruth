@@ -1,3 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+
+
+
+/* Style for PHONES */
+.section-content-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Add horizontal padding */
+  text-align: left; /* Align text to the left */
+}
+
+.branDani-image {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover; /* crops to fill the circle */
+  object-position: center; /* always shows the center part */
+}
+
+.about-subtitle {
+  text-align: center;
+    font-size: 1.75rem;
+  color: #5f6368;
+}
+
+.titles {
+  text-align: left;
+  font-size: 2.75rem;
+  color: #ea8838;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 1.75rem;
+  color: #5f6368;
+}
+
+.section-image {
+  display: block;
+  width: 90%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px; /* adds the rounded corners */
+  object-fit: cover;
+  margin: 0 auto; /* centers the image */
+}
+.colaborate-button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem auto; /* centers the button */
+  padding: 10px 20px;
+  background-color: #f4a261;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.colaborate-button:hover {
+  background-color: #ea8838;
+}
+
+.text-content {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.sub-question {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1.75px solid #e0e0e0;
+  margin: 2rem 0;
+}
+
+.content-title {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+  margin-bottom: -0.9rem;
+  color: #000000;
+}
+
 .App {
   text-align: center;
 }
@@ -9,15 +111,14 @@
   justify-content: flex-end; /* aligns burger right */
   background-color: #ffffff;
   min-height: 10vh; /* Ensures header is above other content */
-  
 }
 
 .mainLogo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 95px; /* adjust as needed */
-  
+  width: 23% !important; /* adjust as needed */
+  cursor: pointer;
 }
 
 .bm-header {
@@ -27,7 +128,7 @@
   right: -50;
   display: flex;
   justify-content: center;
-  pointer-events: none; /* makes sure X stays clickable */
+  pointer-events: auto;
   z-index: 1;
   border: none;
 }
@@ -36,12 +137,12 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 95px; /* adjust as needed */
+  width: 24%; /* adjust as needed */
   border: none;
-
+  cursor: pointer;
+  margin-top: 9.5%;
+  pointer-events: auto;
 }
-
-
 
 .menu {
   display: flex;
@@ -49,13 +150,9 @@
   background-color: white;
   justify-content: flex-start;
   margin-left: 5%;
-  
-
 }
 
-
-
- /* Adding button */
+/* Adding button */
 
 .image-section {
   position: relative;
@@ -64,7 +161,7 @@
 
 .content-image {
   display: block;
-  width: 100vw;
+  width: 100%;
   max-width: none;
   margin: 0;
   height: auto;
@@ -75,11 +172,11 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #000000cc;
+  background-color: #f4a361cb;
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
@@ -87,14 +184,10 @@
 }
 
 .learn-more-btn:hover {
-  background-color: #000;
+  background-color: #f4a261;
 }
- /* Adding button */
-
-
 
 .community {
-
   width: 100%;
 }
 
@@ -119,105 +212,16 @@
 
 .list li {
   margin-bottom: 1.5rem; /* adds vertical spacing */
-  line-height: 1.6; 
+  line-height: 1.6;
 }
-
-
-/* Style for PHONES */
-
-@media (max-width: 480px) {
-  .section-content-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem; /* Add horizontal padding */
-    text-align: left; /* Align text to the left */
-  }
-  .titles {
-    text-align: left;
-    font-size: 2.75rem;
-  }
-  .subtitle {
-    text-align: left;
-    font-size: 1.75rem;
-    color: #5f6368;
-  }
-
-  .section-image {
-    display: block;
-    width: 90%;
-    max-width: 90%;
-    height: auto;
-    border-radius: 20px;     /* adds the rounded corners */
-    object-fit: cover;
-    margin : 0 auto; /* centers the image */
-}
-  .colaborate-button {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    margin: 1rem auto; /* centers the button */
-    padding: 10px 20px;
-    background-color: #f4a261;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-
-  .text-content {
-    font-size: 1.50rem;
-    line-height: 1.5;
-    color: #333;
-    margin-top: 1rem;
-  }
-
-  .sub-question {
-    font-size: 1.50rem;
-    line-height: 1.5;
-    color: #333;
-    margin-top: 1rem;
-    font-weight: bold;
-
-  }
-
-  .section-divider {
-  border: none;
-  border-top: 1.75px solid #e0e0e0; /* light gray */
-  margin: 2rem 0;                /* vertical spacing */
-}
-
-
-}
-
-
 
 .about {
   color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 /* Burger Menu styles */
 
 /* Position the custom burger icon */
@@ -254,22 +258,19 @@
 
 .bm-items {
   display: flex;
-  flex-direction: column;        /* stack vertically */
-  align-items: flex-end;         /* align to the right */
+  flex-direction: column; /* stack vertically */
+  align-items: flex-end; /* align to the right */
   padding: 2rem;
-  
 }
 
 .bm-item {
-  display: block;                /* this is what you're missing */
+  display: block; /* this is what you're missing */
   color: black;
   font-size: 1.2rem;
   text-decoration: none;
   width: 100%;
   text-align: right;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  
-  
 }
 
 .bm-item:last-child {
@@ -281,14 +282,12 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-
-
 .bm-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
 
 .bm-cross {
-  background-color: black;  /* The lines of the X */
+  background-color: black; /* The lines of the X */
 }
 
 .bm-cross-button {
@@ -296,7 +295,6 @@
   width: 24px;
   top: 27px !important;
 }
-
 
 /* Footer sizing */
 
@@ -312,5 +310,99 @@
   width: 100%;
 }
 
+@media (min-width: 480px) {
+  /* Styles for small phones to small tablets */
+  .mainLogo {
+    width: 7%; /* adjust as needed */
+  }
+
+  .subtitle {
+    margin-right: 4rem;
+  }
+
+  .titles {
+    font-size: 2rem;
+  }
+
+  .bm-mainLogo {
+    margin-top: 1.5%;
+  }
+
+  .content-image {
+    border-radius: 8px;
+  }
+
+}
+
+/* Tablet styles ------------------*/
+@media (min-width: 768px) {
+  .content-title {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  blockquote {
+    font-size: 1.5rem;
+  }
+
+  .content-image {
+    border-radius: 12px;
+  }
+
+  .App-header {
+    min-height: 15vh;
+  }
+
+  .mainLogo {
+    width: 7%; /* adjust as needed */
+  }
+
+  .subtitle {
+    /* margin-left: 3rem; */
+    margin-right: 4rem;
+  }
+
+  .bm-mainLogo {
+  margin-top: 1.5%;
+}
 
 
+}
+
+/* Desktop styles ------------------*/
+@media (min-width: 1024px) {
+  .content-title {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  blockquote {
+    font-size: 2rem;
+  }
+
+  .content-image {
+    border-radius: 12px;
+    width: 100%;
+  }
+
+  .mainLogo {
+    width: 8%; /* adjust as needed */
+  }
+
+  .titles {
+    font-size: 3rem;
+  }
+
+  .bm-mainLogo {
+  margin-top: 1.5%;
+}
+
+.content-title {
+  margin-bottom: -1.5rem;
+
+}
+}

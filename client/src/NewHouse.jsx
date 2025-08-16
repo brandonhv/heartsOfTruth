@@ -5,7 +5,7 @@ const NewHouse = () => {
     return (
         <div className="section-content-container">
             <h1 className="titles">What are we working on right now?</h1>
-            <p className="subtitle"> Our first house will be built in Cagayan de Oro City, Philippines. </p>
+            <p className="subtitle"> We are on our way to launching our first home in Cagayan de Oro City, Philippines. </p>
             <button 
                 className="colaborate-button" onClick={() =>window.open('https://www.gofundme.com/f/hearts-of-truth-changing-communities-one-home-at-a-time',
                 '_blank')}

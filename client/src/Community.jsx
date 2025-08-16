@@ -5,7 +5,7 @@ const Community = () => {
     return (
         <div className="section-content-container">
             <h1 className="titles">Community</h1>
-            <p className="subtitle"> The Community that we are focusing on helping is in Philipins for our first houses </p>
+            <p className="subtitle"> We are committed to building homes for the people in the Philippines and partnering with people who see the same vision.</p>
             <button 
                 className="colaborate-button" onClick={() =>window.open('https://www.gofundme.com/f/hearts-of-truth-changing-communities-one-home-at-a-time',
                 '_blank')}
