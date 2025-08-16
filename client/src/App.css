@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+
+
+
 /* Style for PHONES */
 .section-content-container {
   width: 100%;
@@ -26,7 +35,9 @@
 .titles {
   text-align: left;
   font-size: 2.75rem;
+  color: #ea8838;
 }
+
 .subtitle {
   text-align: left;
   font-size: 1.75rem;
@@ -85,6 +96,8 @@
   margin-left: 3rem;
   margin-right: 3rem;
   text-align: center;
+  margin-bottom: -0.9rem;
+  color: #000000;
 }
 
 .App {
@@ -318,6 +331,7 @@
   .content-image {
     border-radius: 8px;
   }
+
 }
 
 /* Tablet styles ------------------*/
@@ -353,6 +367,8 @@
   .bm-mainLogo {
   margin-top: 1.5%;
 }
+
+
 }
 
 /* Desktop styles ------------------*/
@@ -383,5 +399,10 @@
 
   .bm-mainLogo {
   margin-top: 1.5%;
+}
+
+.content-title {
+  margin-bottom: -1.5rem;
+
 }
 }
