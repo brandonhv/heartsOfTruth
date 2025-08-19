@@ -13,7 +13,7 @@ const navigate = useNavigate();
 
             <nav className="header-desktop">
                 <ul className="nav-left">
-                    <li><a href="/collaborate">How to Collaborate?</a></li>
+                    <li><a href="/collaborate" data-text="How to Collaborate?">How to Collaborate?</a></li>
                 </ul>
 
                 
@@ -21,8 +21,8 @@ const navigate = useNavigate();
                 
 
                 <ul className="nav-right">
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/about" data-text="About Us">About Us</a></li>
+                    <li><a href="/contact" data-text="Contact">Contact</a></li>
                 </ul>
             </nav>
 

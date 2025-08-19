@@ -13,7 +13,7 @@ const Collaborate = () => {
                 We are looking for people who want to help us build homes for families who are on the right path to change their lives and communities.
                 If click the button below.
                 <br /><br />
-                With Greatitude!<br />
+                With Gratitude!<br />
                 Brandon and Danielle Hernandez
             </p>
             <button 
