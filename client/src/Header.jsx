@@ -10,8 +10,25 @@ const navigate = useNavigate();
 
     return (
         <Headroom>
+
+            <nav className="header-desktop">
+                <ul className="nav-left">
+                    <li><a href="/collaborate">How to Collaborate?</a></li>
+                </ul>
+
+                
+                <img src={logo} className="nav-logo-desktop" onClick={() => navigate('/')} alt="logo" />
+                
+
+                <ul className="nav-right">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
             <div className="App-header">
-                <img src={logo} className="mainLogo" onClick={() => navigate('/')} id="logo_og" alt="logo" />
+                <img src={logo} className="nav-logo" onClick={() => navigate('/')} alt="logo" />
                 <button className="custom-burger-button" onClick={onBurgerClick}>☰</button>
             </div>
         </Headroom>

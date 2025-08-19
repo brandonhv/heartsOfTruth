@@ -4,7 +4,9 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-
+.header-desktop {
+  display: none;
+}
 
 
 /* Style for PHONES */
@@ -113,13 +115,16 @@ body {
   min-height: 10vh; /* Ensures header is above other content */
 }
 
-.mainLogo {
+.nav-logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 23% !important; /* adjust as needed */
   cursor: pointer;
-}
+  height: 70px;   
+  width: auto;
+} 
+
+
 
 .bm-header {
   position: absolute;
@@ -312,9 +317,6 @@ body {
 
 @media (min-width: 480px) {
   /* Styles for small phones to small tablets */
-  .mainLogo {
-    width: 7%; /* adjust as needed */
-  }
 
   .subtitle {
     margin-right: 4rem;
@@ -355,9 +357,6 @@ body {
     min-height: 15vh;
   }
 
-  .mainLogo {
-    width: 7%; /* adjust as needed */
-  }
 
   .subtitle {
     /* margin-left: 3rem; */
@@ -368,6 +367,49 @@ body {
   margin-top: 1.5%;
 }
 
+
+
+.header-desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  gap: 5rem;
+  
+}
+
+.header-desktop a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left {
+  list-style-type: none;
+  font-size: 1.2rem;
+
+
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2rem;
+  font-size: 1.2rem;
+
+
+}
+
+.nav-logo-desktop {
+  height: 70px;   
+  width: auto;
+}
+
+
+.App-header {
+  display: none; 
+}
 
 }
 
@@ -389,9 +431,6 @@ body {
     width: 100%;
   }
 
-  .mainLogo {
-    width: 8%; /* adjust as needed */
-  }
 
   .titles {
     font-size: 3rem;
