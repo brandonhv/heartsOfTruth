@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.header-desktop {
+  display: none;
+}
+
+
+/* Style for PHONES */
+.section-content-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Add horizontal padding */
+  text-align: left; /* Align text to the left */
+}
+
+.branDani-image {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover; /* crops to fill the circle */
+  object-position: center; /* always shows the center part */
+}
+
+.about-subtitle {
+  text-align: center;
+    font-size: 1.75rem;
+  color: #5f6368;
+}
+
+.titles {
+  text-align: left;
+  font-size: 2.75rem;
+  color: #ea8838;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 1.75rem;
+  color: #5f6368;
+}
+
+.section-image {
+  display: block;
+  width: 90%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px; /* adds the rounded corners */
+  object-fit: cover;
+  margin: 0 auto; /* centers the image */
+}
+.colaborate-button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem auto; /* centers the button */
+  padding: 10px 20px;
+  background-color: #f4a261;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #ea8838;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.colaborate-button:hover {
+  background-color: #ea8838;
+}
+
+.text-content {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.sub-question {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1.75px solid #e0e0e0;
+  margin: 2rem 0;
+}
+
+.content-title {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+  margin-bottom: -0.9rem;
+  color: #000000;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* aligns burger right */
+  background-color: #ffffff;
+  min-height: 10vh; /* Ensures header is above other content */
+}
+
+.nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  height: 70px;   
+  width: auto;
+} 
+
+
+
+.bm-header {
+  position: absolute;
+  top: -2%;
+  left: 0;
+  right: -50;
+  display: flex;
+  justify-content: center;
+  pointer-events: auto;
+  z-index: 1;
+  border: none;
+}
+
+.bm-mainLogo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24%; /* adjust as needed */
+  border: none;
+  cursor: pointer;
+  margin-top: 9.5%;
+  pointer-events: auto;
+}
+
+.menu {
+  display: flex;
+  width: 6%;
+  background-color: white;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+
+/* Adding button */
+
+.image-section {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.content-image {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  height: auto;
+}
+
+.learn-more-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f4a361cb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #f4a261;
+}
+
+.community {
+  width: 100%;
+}
+
+.construction {
+  width: 100%;
+}
+
+.mission {
+  width: 100%;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  margin-bottom: 1.5rem; /* adds vertical spacing */
+  line-height: 1.6;
+}
+
+.about {
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* Burger Menu styles */
+
+/* Position the custom burger icon */
+.custom-burger-button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1200;
+  margin-left: 1rem;
+}
+
+/* Fullscreen menu override */
+.bm-menu-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+/* Menu content */
+
+.bm-menu {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* changed from center to top */
+  align-items: flex-end;
+  padding-top: 80px; /* space under the X button */
+  padding-right: 40px;
+}
+
+.bm-items {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: flex-end; /* align to the right */
+  padding: 2rem;
+}
+
+.bm-item {
+  display: block; /* this is what you're missing */
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bm-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none; /* remove border from last item */
+}
+
+.bm-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.bm-cross {
+  background-color: black; /* The lines of the X */
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  top: 27px !important;
+}
+
+/* Footer sizing */
+
+.App-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff44;
+  min-height: 15vh;
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  /* Styles for small phones to small tablets */
+
+  .subtitle {
+    margin-right: 4rem;
+  }
+
+  .titles {
+    font-size: 2rem;
+  }
+
+  .bm-mainLogo {
+    margin-top: 1.5%;
+  }
+
+  .content-image {
+    border-radius: 8px;
+  }
+
+}
+
+/* Tablet styles ------------------*/
+@media (min-width: 768px) {
+  .content-title {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  blockquote {
+    font-size: 1.5rem;
+  }
+
+  .content-image {
+    border-radius: 12px;
+  }
+
+  .App-header {
+    min-height: 15vh;
+  }
+
+
+  .subtitle {
+    /* margin-left: 3rem; */
+    margin-right: 4rem;
+  }
+
+  .bm-mainLogo {
+  margin-top: 1.5%;
+}
+
+
+
+
+
+}
+
+/* Desktop styles ------------------*/
+@media (min-width: 1024px) {
+  .content-title {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  blockquote {
+    font-size: 1.7rem;
+  }
+
+  .content-image {
+    border-radius: 12px;
+    width: 100%;
+  }
+
+
+  .titles {
+    font-size: 2.5rem;
+  }
+
+  .bm-mainLogo {
+  margin-top: 1.5%;
+}
+
+.content-title {
+  margin-bottom: -1.5rem;
+
+}
+
+.header-desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  gap: 5rem;
+  
+  
+}
+
+.header-desktop a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+.nav-left a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-left a::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;                
+  color: #ea8838;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.nav-left a:hover::after { 
+  width: 100%;
+  transition: width .6s ease; 
+}
+
+
+
+
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2rem;
+  font-size: 1.2rem;
+  
+}
+
+.nav-right a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-right a::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;                
+  color: #ea8838;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.nav-right a:hover::after { 
+  width: 100%; 
+  transition: width .6s ease;
+}
+
+
+.nav-logo-desktop {
+  height: 70px;   
+  width: auto;
+  cursor: pointer;
+}
+
+
+.App-header {
+  display: none; 
+}
+}
