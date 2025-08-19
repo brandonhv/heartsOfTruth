@@ -4,7 +4,9 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-
+.header-desktop {
+  display: none;
+}
 
 
 /* Style for PHONES */
@@ -67,6 +69,15 @@ body {
   cursor: pointer;
 }
 
+.email {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #ea8838;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .colaborate-button:hover {
   background-color: #ea8838;
 }
@@ -113,13 +124,16 @@ body {
   min-height: 10vh; /* Ensures header is above other content */
 }
 
-.mainLogo {
+.nav-logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 23% !important; /* adjust as needed */
   cursor: pointer;
-}
+  height: 70px;   
+  width: auto;
+} 
+
+
 
 .bm-header {
   position: absolute;
@@ -312,9 +326,6 @@ body {
 
 @media (min-width: 480px) {
   /* Styles for small phones to small tablets */
-  .mainLogo {
-    width: 7%; /* adjust as needed */
-  }
 
   .subtitle {
     margin-right: 4rem;
@@ -355,9 +366,6 @@ body {
     min-height: 15vh;
   }
 
-  .mainLogo {
-    width: 7%; /* adjust as needed */
-  }
 
   .subtitle {
     /* margin-left: 3rem; */
@@ -369,6 +377,9 @@ body {
 }
 
 
+
+
+
 }
 
 /* Desktop styles ------------------*/
@@ -377,11 +388,11 @@ body {
     margin-left: 4rem;
     margin-right: 4rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   blockquote {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .content-image {
@@ -389,12 +400,9 @@ body {
     width: 100%;
   }
 
-  .mainLogo {
-    width: 8%; /* adjust as needed */
-  }
 
   .titles {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .bm-mainLogo {
@@ -404,5 +412,95 @@ body {
 .content-title {
   margin-bottom: -1.5rem;
 
+}
+
+.header-desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  gap: 5rem;
+  
+  
+}
+
+.header-desktop a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+.nav-left a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-left a::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;                
+  color: #ea8838;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.nav-left a:hover::after { 
+  width: 100%;
+  transition: width .6s ease; 
+}
+
+
+
+
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2rem;
+  font-size: 1.2rem;
+  
+}
+
+.nav-right a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-right a::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;                
+  color: #ea8838;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.nav-right a:hover::after { 
+  width: 100%; 
+  transition: width .6s ease;
+}
+
+
+.nav-logo-desktop {
+  height: 70px;   
+  width: auto;
+  cursor: pointer;
+}
+
+
+.App-header {
+  display: none; 
 }
 }
