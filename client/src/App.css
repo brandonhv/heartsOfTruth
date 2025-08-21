@@ -246,6 +246,7 @@ body {
   cursor: pointer;
   z-index: 1200;
   margin-left: 1rem;
+  color: black;
 }
 
 /* Fullscreen menu override */
